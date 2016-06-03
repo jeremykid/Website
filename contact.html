@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A one page template very useful on any kind of website niche">
+		<meta name="author" content="Bootstrap Wizard">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Pizza</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Google Font -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">	
+		<!-- Animate -->
+		<link href="css/animate/animate.css" rel="stylesheet">
+		<!-- Fontawesome-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Owl Carousel -->
+		<link href="css/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="css/owl-carousel/owl.theme.css" rel="stylesheet">
+		<!-- Magnific Popup -->
+		<link href="css/magnific-popup/magnific-popup.css" rel="stylesheet" > 
+		<!-- Main-Style -->
+		<link href="css/style.css" rel="stylesheet">	
+		
+		<style>
+	      #map {
+	        width: 80%;
+		    height: 600px;
+		    margin: 0;
+		    padding: 0;
+	      }
+	    </style>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	
+	<body class="bg-static">
+
+		<div class="preloader">
+			<div class="loader-item">
+				<img src="images/loading.gif" alt="loader">
+			</div>
+		</div>
+		
+		<!-- pattern -->
+		<div id="bg_pattern"></div>
+		<!-- ./pattern -->
+<!-- 		<nav class="navbar navbar-custom" role="navigation" style = "top: 0;
+  border-width: 0 0 1px;">
+  			style
+  		</nav> -->
+		<!-- Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container text-center">
+                <H3>City wide delivery Open 24 hours</H3>
+                <h3>Hungry? Have no Money? visit us for free meal! </h3>
+            </div>
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<div class="navbar-header">
+					<div class="navbar-header">
+				      <a class="navbar-brand" href="#" style = "font-size:200%;margin-top:15px;position:relative;">NEW YORK PIZZA</a>
+				    </div>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+<!-- 				  <a class="navbar-brand" href="#"><h1></h1></a>
+ -->
+				</div>
+				<div class = "row" style = "width: 100%; height: auto;margin-left:20px;">
+<!-- 					<div class = "col-md-2">
+						<h6>11922 129 Avenue NW<br>
+						Edmonton, AB T5E 0N3<br>
+						(780) 424-7106</h6>
+						
+					 </div>
+					 <div class = "col-md-1">
+					 	<a href="https://www.facebook.com/groups/uacbc/?fref=nf"><i class="fa fa-map-marker"></i></a>
+					 </div> -->
+				<div style = "position:absolute;left:500px;">
+
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-nav">
+				  <ul class="nav navbar-nav navbar-right">
+					<li class="page-scroll"><a href="index.html">Home</a></li>			
+					<li class="page-scroll"><a href="menu.html">Menu</a></li>
+					<li class="page-scroll"><a href="contact.html">Contact</a></li>
+<!-- 					<li><a href="https://www.facebook.com/groups/uacbc/?fref=nf"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!-- contact -->
+		<div id="contact" class="fullSection">
+			<div class="container">
+				<div class="section-heading">
+					<h2>Contact</h2>
+				</div>
+					<!-- address -->
+				<div class = "text-center">
+						<div class="address  wow fadeInRight showdelay2">
+							<h3>Address</h3>
+							<ul class="unstyled">
+								<li><i class="fa fa-map-marker"></i>11922 129 Avenue NW
+						Edmonton, AB T5E 0N3
+						</li>
+
+
+							</ul>
+						</div>		
+						<div id="map" style = "position: relative;left:10%;"></div>
+								    <script>
+								      function initMap() {
+								        var mapDiv = document.getElementById('map');
+								        var map = new google.maps.Map(mapDiv, {
+								          center: {lat: 53.5250221, lng: -113.5299736},
+								          zoom: 13
+								        });
+
+								        var contentString = '<h3 stype:"color:black;">Pizza Store</h3>';
+
+								        var marker = new google.maps.Marker({
+										    position: {lat: 53.5234636, lng: -113.6162069},
+										    map: map,
+										    title: 'Pizza Store'
+										});
+
+										var marker0 = new google.maps.Marker({
+										    position: {lat: 53.4790449, lng: -113.5149597},
+										    map: map,
+										    title: 'Pizza Store'
+										});
+
+										var marker1 = new google.maps.Marker({
+										    position: {lat: 53.5455766, lng: -113.500149},
+										    map: map,
+										    title: 'Pizza Store'
+										});
+
+								        var infowindow = new google.maps.InfoWindow({
+										    content: contentString
+										});
+
+										marker.addListener('click', function() {
+										    infowindow.open(map, marker);
+										});
+
+										marker0.addListener('click', function() {
+											infowindow.open(map, marker0);
+										});
+
+										marker1.addListener('click', function() {
+											infowindow.open(map, marker1);
+										});
+								      }
+								    </script>
+								    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+								        async defer>
+								    </script>
+				</div>
+					<!-- ./address -->
+									
+			</div>
+					
+		</div>
+		<!-- ./contact -->
+
+
+
+
+			
+			
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container">
+				<div class="text-center">
+					&copy; NEWYORKPIZZA 
+				</div>
+			</div>
+		</footer>	
+		<!-- ./footer -->
+
+
+		<!-- jQuery  -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- easing -->
+		<script src="js/easing/jquery.easing.1.3.js"></script>
+		<!-- wow -->
+		<script src="js/wow/wow.min.js"></script>
+		<!-- backstretch -->
+		<script src="js/backstretch/jquery.backstretch.min.js"></script>
+		<!-- owl carousel -->
+		<script src="js/owl-carousel/owl.carousel.js"></script>	
+		<!-- Magnific Popup -->
+		<script src="js/magnific-popup/jquery.magnific-popup.js"></script> 
+		<!-- waypoints -->
+		<script src="js/waypoints/waypoints.js"></script>
+		<!-- counterup -->
+		<script src="js/counterup/jquery.counterup.js"></script>
+		<!-- countdown -->
+		<script src="js/countdown/jquery.countdown.min.js"></script>	
+		<!-- UIToTop -->
+		<script src="js/uitotop/jquery.ui.totop.min.js"></script>
+		<!-- jqbootstrapvalidator -->
+		<script src="js/jqbootstrapvalidation/jqBootstrapValidation.js"></script>		
+		<!-- main -->
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>
+
+
